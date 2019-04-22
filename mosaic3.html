@@ -12,7 +12,7 @@
 </div>
 <script type="text/javascript">
 
-var draw = SVG('divMosaic').size(800, 600);
+var draw = SVG('divMosaic').size(1024, 800);
 draw.image('./main-r.jpg')//.size(2660,2600).move(0,0)
 draw.link('./mosaic/29.jpg').target('_blank').image('./mosaic/29.jpg').attr({'opacity':0.45}).size(26, 26).move(0, 0).mouseover(function() {this.opacity});
 draw.link('./mosaic/29.jpg').target('_blank').image('./mosaic/29.jpg').attr({'opacity':0.45}).size(26, 26).move(26, 0);
@@ -10022,6 +10022,7 @@ $(function(){
     fit: true,
     center: true,
     minZoom: 0.1,
+    maxZoom: 50,
     zoom: 0.1
   });
 
